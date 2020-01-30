@@ -6,6 +6,7 @@
 #' Contains 10 features and 1309 observations. Target column is `"Survived"`.
 #'
 #' @section Pre-processing:
+#' * All column names have been changed to `snake_case`.
 #' * training and test set have been joined.
 #'   Observations of the test set have a missing value in the target column `"Survived"`.
 #' * Id column has been removed.

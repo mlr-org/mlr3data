@@ -14,6 +14,7 @@ Contains 10 features and 1309 observations. Target column is \code{"Survived"}.
 \section{Pre-processing}{
 
 \itemize{
+\item All column names have been changed to \code{snake_case}.
 \item training and test set have been joined.
 Observations of the test set have a missing value in the target column \code{"Survived"}.
 \item Id column has been removed.
