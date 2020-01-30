@@ -13,7 +13,8 @@ Description: A collection of interesting and educational machine
     (<https://mlr3gallery.mlr-org.com>), or in examples of 'mlr3' package.
     All data sets are properly pre-processed and ready to be analyzed by
     most machine learning algorithms. Currently contains the following
-    data sets: housing prices in Kings County, Titanic passenger survival data.
+    data sets: (1) housing prices in Kings County, (2) Titanic passenger
+    survival data.
 License: LGPL (>= 2.1)
 Depends:
     R (>= 3.1.0)
