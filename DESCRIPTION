@@ -1,6 +1,6 @@
 Package: mlr3data
 Title: A collection of machine learning data sets for 'mlr3'
-Version: 0.0.1
+Version: 0.1.0
 Authors@R:
     person(given = "Michel",
            family = "Lang",
