@@ -1,0 +1,24 @@
+Package: mlr3data
+Title: A collection of machine learning data sets for 'mlr3'
+Version: 0.0.1
+Authors@R:
+    person(given = "Michel",
+           family = "Lang",
+           role = c("cre", "aut"),
+           email = "michellang@gmail.com",
+           comment = c(ORCID = "0000-0001-9754-0393"))
+Description: A collection of interesting and educational machine
+    learning data sets which are used as examples in the 'mlr3' book
+    (<https://mlr3book.mlr-org.com>), the use case gallery
+    (<https://mlr3gallery.mlr-org.com>), or in examples of 'mlr3' package.
+    All data sets are properly pre-processed and ready to be analyzed by
+    most machine learning algorithms. Currently contains the following
+    data sets: housing prices in Kings County, Titanic passenger survival data.
+License: LGPL (>= 2.1)
+Depends:
+    R (>= 3.1.0)
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: no
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.0.2
