@@ -1,5 +1,5 @@
 Package: mlr3data
-Title: A collection of machine learning data sets for 'mlr3'
+Title: Collection of machine learning data sets for 'mlr3'
 Version: 0.1.0
 Authors@R:
     person(given = "Michel",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("cre", "aut"),
            email = "michellang@gmail.com",
            comment = c(ORCID = "0000-0001-9754-0393"))
-Description: A collection of interesting and educational machine
+Description: A small collection of interesting and educational machine
     learning data sets which are used as examples in the 'mlr3' book
     (<https://mlr3book.mlr-org.com>), the use case gallery
     (<https://mlr3gallery.mlr-org.com>), or in examples of 'mlr3' package.
