@@ -8,14 +8,14 @@
 #' @section Pre-processing:
 #' * All column names have been changed to `snake_case`.
 #' * training and test set have been joined.
-#'   Observations of the test set have a missing value in the target column `"Survived"`.
+#'   Observations of the test set have a missing value in the target column `"survived"`.
 #' * Id column has been removed.
-#' * Passenger class `"Pclass"` has been converted to an ordered factor.
-#' * Features `"Sex"` and `"Embarked"` have been converted to factors.
-#' * Empty strings in `"Cabin"` and `"Embarked"` have been encoded as missing values.
-#'
+#' * Passenger class `"pclass"` has been converted to an ordered factor.
+#' * Features `"sex"` and `"embarked"` have been converted to factors.
+#' * Empty strings in `"cabin"` and `"embarked"` have been encoded as missing values.
 #'
 #' @source \CRANpkg{titanic} and \url{https://www.kaggle.com/c/titanic/data}
+#'
 #' @docType data
 #' @keywords data
 #' @examples

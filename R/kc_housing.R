@@ -16,6 +16,7 @@
 #' * Feature `"waterfront"` has been converted to logical.
 #'
 #' @source \url{https://www.kaggle.com/harlfoxem/housesalesprediction}
+#'
 #' @docType data
 #' @keywords data
 #' @examples

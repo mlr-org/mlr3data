@@ -16,11 +16,11 @@ Contains 10 features and 1309 observations. Target column is \code{"Survived"}.
 \itemize{
 \item All column names have been changed to \code{snake_case}.
 \item training and test set have been joined.
-Observations of the test set have a missing value in the target column \code{"Survived"}.
+Observations of the test set have a missing value in the target column \code{"survived"}.
 \item Id column has been removed.
-\item Passenger class \code{"Pclass"} has been converted to an ordered factor.
-\item Features \code{"Sex"} and \code{"Embarked"} have been converted to factors.
-\item Empty strings in \code{"Cabin"} and \code{"Embarked"} have been encoded as missing values.
+\item Passenger class \code{"pclass"} has been converted to an ordered factor.
+\item Features \code{"sex"} and \code{"embarked"} have been converted to factors.
+\item Empty strings in \code{"cabin"} and \code{"embarked"} have been encoded as missing values.
 }
 }
 
