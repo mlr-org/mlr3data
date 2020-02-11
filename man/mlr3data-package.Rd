@@ -4,16 +4,17 @@
 \name{mlr3data-package}
 \alias{mlr3data}
 \alias{mlr3data-package}
-\title{mlr3data}
+\title{mlr3data: Collection of Machine Learning Data Sets for 'mlr3'}
 \description{
-A small collection of interesting and educational machine
-    learning data sets which are used as examples in the 'mlr3' book
-    (<https://mlr3book.mlr-org.com>), the use case gallery
-    (<https://mlr3gallery.mlr-org.com>), or in examples of 'mlr3' package.
-    All data sets are properly preprocessed and ready to be analyzed by
-    most machine learning algorithms. Currently contains the following
-    data sets: (1) housing prices in Kings County, (2) Titanic passenger
-    survival data.
+A small collection of interesting and educational
+    machine learning data sets which are used as examples in the 'mlr3'
+    book (<https://mlr3book.mlr-org.com>), the use case gallery
+    (<https://mlr3gallery.mlr-org.com>), or in other examples. All data
+    sets are properly preprocessed and ready to be analyzed by most
+    machine learning algorithms. Currently contains the following data
+    sets: (1) housing prices in Kings County, and (2) Titanic passenger
+    survival data. Data sets are automatically added to the dictionary of tasks
+    if 'mlr3' is loaded.
 }
 \seealso{
 Useful links:

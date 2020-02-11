@@ -1,5 +1,7 @@
 #' @title Titanic
+#'
 #' @name titanic
+#' @aliases mlr_tasks_titanic
 #'
 #' @description
 #' Classification data to predict the fate of passengers on the ocean liner "Titanic".
@@ -22,3 +24,10 @@
 #' data("titanic", package = "mlr3data")
 #' str(titanic)
 NULL
+
+get_titanic_task = function() {
+  b = as_backend("titanic")
+  task = mlr3::TaskClassif$new("titanic", b, target = "survived")
+  b$hash = task$man = "mlr3data::mlr_tasks_titanic"
+  task
+}

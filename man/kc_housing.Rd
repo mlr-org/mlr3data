@@ -3,6 +3,7 @@
 \docType{data}
 \name{kc_housing}
 \alias{kc_housing}
+\alias{mlr_tasks_kc_housing}
 \title{House Sales in King County}
 \source{
 \url{https://www.kaggle.com/harlfoxem/housesalesprediction}

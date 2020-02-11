@@ -3,6 +3,7 @@
 \docType{data}
 \name{titanic}
 \alias{titanic}
+\alias{mlr_tasks_titanic}
 \title{Titanic}
 \source{
 \CRANpkg{titanic} and \url{https://www.kaggle.com/c/titanic/data}

@@ -1,5 +1,7 @@
 #' @title House Sales in King County
+#'
 #' @name kc_housing
+#' @aliases mlr_tasks_kc_housing
 #'
 #' @description
 #' Regression task to predict house sale prices for
@@ -23,3 +25,10 @@
 #' data("kc_housing", package = "mlr3data")
 #' str(kc_housing)
 NULL
+
+get_kc_housing_task = function() {
+  b = as_backend("kc_housing")
+  task = mlr3::TaskRegr$new("kc_housing", b, target = "price")
+  b$hash = task$man = "mlr3data::mlr_tasks_kc_housing"
+  task
+}
