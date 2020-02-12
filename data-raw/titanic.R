@@ -1,5 +1,4 @@
-requireNamespace("data.table")
-requireNamespace("titanic")
+library("data.table")
 
 data("titanic_train", package = "titanic")
 data("titanic_test", package = "titanic")
@@ -8,11 +7,11 @@ convertCamelCase = function(x) {
   tolower(gsub("((?<=[a-z0-9])[A-Z]|(?!^)[A-Z](?=[a-z]))", "_\\1", x, perl = TRUE))
 }
 
-titanic = data.table::rbindlist(list(titanic_train, titanic_test), fill = TRUE, use.names = TRUE)
+titanic = rbindlist(list(titanic_train, titanic_test), fill = TRUE, use.names = TRUE)
 
 setnames(titanic, convertCamelCase(colnames(titanic)))
 titanic[, passenger_id := NULL]
-titanic[, survived := as.factor(survived)]
+titanic[, survived := factor(ifelse(survived, "yes", "no"), levels = c("yes", "no"))]
 titanic[, pclass := factor(pclass, ordered = TRUE)]
 titanic[, sex := as.factor(sex)]
 titanic[!nzchar(cabin), cabin := NA_character_]

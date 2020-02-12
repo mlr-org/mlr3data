@@ -11,6 +11,7 @@
 #' * All column names have been changed to `snake_case`.
 #' * training and test set have been joined.
 #'   Observations of the test set have a missing value in the target column `"survived"`.
+#' * Column '"survived"' has been re-encoded to a factor with levels '"yes"' and '"no"'.
 #' * Id column has been removed.
 #' * Passenger class `"pclass"` has been converted to an ordered factor.
 #' * Features `"sex"` and `"embarked"` have been converted to factors.
@@ -27,7 +28,7 @@ NULL
 
 get_titanic_task = function() {
   b = as_backend("titanic")
-  task = mlr3::TaskClassif$new("titanic", b, target = "survived")
+  task = mlr3::TaskClassif$new("titanic", b, target = "survived", positive = "yes")
   b$hash = task$man = "mlr3data::mlr_tasks_titanic"
   task
 }
