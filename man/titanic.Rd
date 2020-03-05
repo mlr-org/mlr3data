@@ -18,6 +18,7 @@ Contains 10 features and 1309 observations. Target column is \code{"Survived"}.
 \item All column names have been changed to \code{snake_case}.
 \item training and test set have been joined.
 Observations of the test set have a missing value in the target column \code{"survived"}.
+\item Column '"survived"' has been re-encoded to a factor with levels '"yes"' and '"no"'.
 \item Id column has been removed.
 \item Passenger class \code{"pclass"} has been converted to an ordered factor.
 \item Features \code{"sex"} and \code{"embarked"} have been converted to factors.
