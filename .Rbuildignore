@@ -1,4 +1,11 @@
-^LICENSE\.md$
-^data-raw$
-^.editorconfig$
-^.ignore$
+^LICENSE$
+.ignore
+.editorconfig
+.gitignore
+^.git$
+^.github$
+^.*\.Rproj$
+^\.Rproj\.user$
+^man-roxygen$
+^docs$
+^pkgdown$
