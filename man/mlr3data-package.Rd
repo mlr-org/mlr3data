@@ -13,8 +13,8 @@ A small collection of interesting and educational
     sets are properly preprocessed and ready to be analyzed by most
     machine learning algorithms. Currently contains the following data
     sets: (1) housing prices in Kings County, and (2) Titanic passenger
-    survival data. Data sets are automatically added to the dictionary of tasks
-    if 'mlr3' is loaded.
+    survival data. Data sets are automatically added to the dictionary of
+    tasks if 'mlr3' is loaded.
 }
 \seealso{
 Useful links:
