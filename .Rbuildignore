@@ -10,3 +10,6 @@
 ^docs$
 ^pkgdown$
 ^mlr3data\.Rproj$
+^\.travis\.yml$
+^\.lintr$
+^\.vscode$
