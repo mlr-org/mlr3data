@@ -1,9 +1,9 @@
 stopifnotdataset = function(data) {
-   stopifnot(
-     is.data.frame(data),
-     colnames(data) == tolower(colnames(data)),
-     colnames(data) == make.names(colnames(data), unique = TRUE)
-   )
+  stopifnot(
+    is.data.frame(data),
+    colnames(data) == tolower(colnames(data)),
+    colnames(data) == make.names(colnames(data), unique = TRUE)
+  )
 }
 
 data("kc_housing", package = "mlr3data")
