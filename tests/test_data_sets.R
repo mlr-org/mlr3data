@@ -17,7 +17,7 @@ stopifnot(nrow(titanic) == 1309L, ncol(titanic) == 11L)
 
 data("penguins", package = "mlr3data")
 stopifnotdataset(penguins)
-stopifnot(nrow(penguins) == 344L, ncol(titanic) == 8L)
+stopifnot(nrow(penguins) == 344L, ncol(penguins) == 8L)
 
 
 if (requireNamespace("mlr3")) {
