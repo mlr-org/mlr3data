@@ -5,6 +5,7 @@ register_tasks = function() {
   x = getFromNamespace("mlr_tasks", ns = "mlr3")
   x$add("titanic", get_titanic_task())
   x$add("kc_housing", get_kc_housing_task())
+  x$add("penguins", get_penguins_task())
 }
 
 .onLoad = function(libname, pkgname) { # nolint
