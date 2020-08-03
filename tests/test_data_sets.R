@@ -1,3 +1,5 @@
+library(mlr3data)
+
 stopifnotdataset = function(data) {
   stopifnot(
     is.data.frame(data),
