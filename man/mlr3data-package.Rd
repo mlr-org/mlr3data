@@ -11,10 +11,8 @@ A small collection of interesting and educational
     book (<https://mlr3book.mlr-org.com>), the use case gallery
     (<https://mlr3gallery.mlr-org.com>), or in other examples. All data
     sets are properly preprocessed and ready to be analyzed by most
-    machine learning algorithms. Currently contains the following data
-    sets: (1) housing prices in Kings County, and (2) Titanic passenger
-    survival data. Data sets are automatically added to the dictionary of
-    tasks if 'mlr3' is loaded.
+    machine learning algorithms.  Data sets are automatically added to the
+    dictionary of tasks if 'mlr3' is loaded.
 }
 \seealso{
 Useful links:
