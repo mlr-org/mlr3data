@@ -26,7 +26,10 @@ data("penguins", package = "mlr3data")
 str(penguins)
 }
 \references{
-\cite{gorman2014}
+Gorman KB, Williams TD, Fraser WR (2014).
+\dQuote{Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis).}
+\emph{PLoS ONE}, \bold{9}(3), e90081.
+\doi{10.1371/journal.pone.0090081}.
 
 \url{https://github.com/allisonhorst/palmerpenguins}
 }

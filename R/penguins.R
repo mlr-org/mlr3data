@@ -15,7 +15,7 @@
 #' @source \CRANpkg{palmerpenguins}
 #'
 #' @references
-#' \cite{gorman2014}
+#' `r tools::toRd(bibentries["gorman2014"])`
 #'
 #' \url{https://github.com/allisonhorst/palmerpenguins}
 #'
