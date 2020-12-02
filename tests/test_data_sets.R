@@ -21,9 +21,20 @@ data("penguins", package = "mlr3data")
 stopifnotdataset(penguins)
 stopifnot(nrow(penguins) == 344L, ncol(penguins) == 8L)
 
+data("optdigits", package = "mlr3data")
+stopifnotdataset(optdigits)
+stopifnot(nrow(optdigits) == 5620L, ncol(optdigits) == 65L)
+
+data("moneyball", package = "mlr3data")
+stopifnotdataset(moneyball)
+stopifnot(nrow(moneyball) == 1232L, ncol(moneyball) == 15L)
+
+
 
 if (requireNamespace("mlr3")) {
   stopifnot(inherits(mlr3::tsk("kc_housing"), "TaskRegr"))
   stopifnot(inherits(mlr3::tsk("titanic"), "TaskClassif"))
   stopifnot(inherits(mlr3::tsk("penguins"), "TaskClassif"))
+  stopifnot(inherits(mlr3::tsk("optdigits"), "TaskClassif"))
+  stopifnot(inherits(mlr3::tsk("moneyball"), "TaskRegr"))
 }

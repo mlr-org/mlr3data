@@ -12,6 +12,8 @@ the [mlr3 gallery](https://mlr3gallery.mlr-org.com), or in other examples of [ml
 All data sets are properly preprocessed and ready to be analyzed by most machine learning algorithms.
 Currently contains the following data sets:
 
-1. housing prices in Kings County,
+1. Housing prices in Kings County,
 2. Titanic passenger survival data.
 3. Palmer penguin data.
+4. Optical recognition of handwritten digits data.
+5. Major League Baseball statistics 1962-2012.
