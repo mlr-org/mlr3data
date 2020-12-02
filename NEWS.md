@@ -1,8 +1,10 @@
+# mlr3data 0.2.2
+* Added optdigits data obtained via the `OpenML` package.
+* Added moneyball data obtained via the `OpenML` package.
+
 # mlr3data 0.2.1
 
 * Removed dependency on orphaned package `bibtex`.
-* Added optdigits data obtained via the `OpenML` package.
-* Added moneyball data obtained via the `OpenML` package.
 
 # mlr3data 0.2.0
 
