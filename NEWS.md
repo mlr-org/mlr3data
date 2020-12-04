@@ -1,4 +1,4 @@
-# mlr3data 0.2.2
+# mlr3data 0.3.0
 * Added optdigits data obtained via the `OpenML` package.
 * Added moneyball data obtained via the `OpenML` package.
 
