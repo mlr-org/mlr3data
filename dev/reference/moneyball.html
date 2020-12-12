@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Palmer Penguins — penguins • mlr3data</title>
+<title>Major League Baseball Statistics 1962-2012 — moneyball • mlr3data</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -53,10 +53,11 @@
 
 
 
-<meta property="og:title" content="Palmer Penguins — penguins" />
-<meta property="og:description" content="Classification data to predict the species of penguins from the palmerpenguins package
-(CRAN version 0.1.0).
-Promoted as an alternative to the iris data set." />
+<meta property="og:title" content="Major League Baseball Statistics 1962-2012 — moneyball" />
+<meta property="og:description" content="Regression data to predict the number of runs scored.
+Obtained using the OpenML package.
+Contains 14 features and 1232 observations.
+Target column is &quot;rs&quot;." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -155,52 +156,52 @@ Promoted as an alternative to the iris data set." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Palmer Penguins</h1>
-    <small class="dont-index">Source: <a href='https://github.com/mlr-org/mlr3data/blob/master/R/penguins.R'><code>R/penguins.R</code></a></small>
-    <div class="hidden name"><code>penguins.Rd</code></div>
+    <h1>Major League Baseball Statistics 1962-2012</h1>
+    <small class="dont-index">Source: <a href='https://github.com/mlr-org/mlr3data/blob/master/R/moneyball.R'><code>R/moneyball.R</code></a></small>
+    <div class="hidden name"><code>moneyball.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Classification data to predict the species of penguins from the <a href='https://CRAN.R-project.org/package=palmerpenguins'><span class="pkg">palmerpenguins</span></a> package
-(CRAN version 0.1.0).
-Promoted as an alternative to the <a href='https://rdrr.io/r/datasets/iris.html'>iris data set</a>.</p>
+    <p>Regression data to predict the number of runs scored.
+Obtained using the <a href='https://CRAN.R-project.org/package=OpenML'><span class="pkg">OpenML</span></a> package.</p>
+<p>Contains 14 features and 1232 observations.
+Target column is <code>"rs"</code>.</p>
     </div>
 
 
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p><a href='https://CRAN.R-project.org/package=palmerpenguins'><span class="pkg">palmerpenguins</span></a></p>
+    <p><a href='https://www.openml.org/d/41021'>https://www.openml.org/d/41021</a></p>
     <h2 class="hasAnchor" id="pre-processing"><a class="anchor" href="#pre-processing"></a>Pre-processing</h2>
 
     
 
 <ul>
-<li><p>The unit have been removed from the column names.
-Lengths are given in millimeters (mm), weight in gram (g).</p></li>
+<li><p>All variable names have been converted from upper case to lower case.</p></li>
+<li><p>The variables <code>"year"</code>, <code>"rs", </code>"ra"<code>, </code>"w"` have been coerced to integers.</p></li>
 </ul>
 
-    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
-
-    <p>Gorman KB, Williams TD, Fraser WR (2014).
-&#8220;Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis).&#8221;
-<em>PLoS ONE</em>, <b>9</b>(3), e90081.
-doi: <a href='https://doi.org/10.1371/journal.pone.0090081'>10.1371/journal.pone.0090081</a>
-.</p>
-<p><a href='https://github.com/allisonhorst/palmerpenguins'>https://github.com/allisonhorst/palmerpenguins</a></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='st'>"penguins"</span>, package <span class='op'>=</span> <span class='st'>"mlr3data"</span><span class='op'>)</span>
-<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span><span class='op'>(</span><span class='va'>penguins</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; 'data.frame':	344 obs. of  8 variables:
-#&gt;  $ species       : Factor w/ 3 levels "Adelie","Chinstrap",..: 1 1 1 1 1 1 1 1 1 1 ...
-#&gt;  $ island        : Factor w/ 3 levels "Biscoe","Dream",..: 3 3 3 3 3 3 3 3 3 3 ...
-#&gt;  $ bill_length   : num  39.1 39.5 40.3 NA 36.7 39.3 38.9 39.2 34.1 42 ...
-#&gt;  $ bill_depth    : num  18.7 17.4 18 NA 19.3 20.6 17.8 19.6 18.1 20.2 ...
-#&gt;  $ flipper_length: int  181 186 195 NA 193 190 181 195 193 190 ...
-#&gt;  $ body_mass     : int  3750 3800 3250 NA 3450 3650 3625 4675 3475 4250 ...
-#&gt;  $ sex           : Factor w/ 2 levels "female","male": 2 1 1 NA 1 2 1 2 NA NA ...
-#&gt;  $ year          : int  2007 2007 2007 2007 2007 2007 2007 2007 2007 2007 ...</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='st'>"moneyball"</span>, package <span class='op'>=</span> <span class='st'>"mlr3data"</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span><span class='op'>(</span><span class='va'>moneyball</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; 'data.frame':	1232 obs. of  15 variables:
+#&gt;  $ team        : Factor w/ 39 levels "ARI","ATL","BAL",..: 1 2 3 4 5 6 7 8 9 10 ...
+#&gt;  $ league      : Factor w/ 2 levels "AL","NL": 2 2 1 1 2 1 2 1 2 1 ...
+#&gt;  $ year        : int  2012 2012 2012 2012 2012 2012 2012 2012 2012 2012 ...
+#&gt;  $ rs          : int  734 700 712 734 613 748 669 667 758 726 ...
+#&gt;  $ ra          : int  688 600 705 806 759 676 588 845 890 670 ...
+#&gt;  $ w           : int  81 94 93 69 61 85 97 68 64 88 ...
+#&gt;  $ obp         : num  0.328 0.32 0.311 0.315 0.302 0.318 0.315 0.324 0.33 0.335 ...
+#&gt;  $ slg         : num  0.418 0.389 0.417 0.415 0.378 0.422 0.411 0.381 0.436 0.422 ...
+#&gt;  $ ba          : num  0.259 0.247 0.247 0.26 0.24 0.255 0.251 0.251 0.274 0.268 ...
+#&gt;  $ playoffs    : Factor w/ 2 levels "0","1": 1 2 2 1 1 1 2 1 1 2 ...
+#&gt;  $ rankseason  : Factor w/ 8 levels "1","2","3","4",..: NA 4 5 NA NA NA 2 NA NA 6 ...
+#&gt;  $ rankplayoffs: Factor w/ 5 levels "1","2","3","4",..: NA 5 4 NA NA NA 4 NA NA 2 ...
+#&gt;  $ g           : Factor w/ 8 levels "158","159","160",..: 5 5 5 5 5 5 5 5 5 5 ...
+#&gt;  $ oobp        : num  0.317 0.306 0.315 0.331 0.335 0.319 0.305 0.336 0.357 0.314 ...
+#&gt;  $ oslg        : num  0.415 0.378 0.403 0.428 0.424 0.405 0.39 0.43 0.47 0.402 ...</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
