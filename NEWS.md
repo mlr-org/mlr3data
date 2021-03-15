@@ -1,6 +1,6 @@
-# mlr3data 0.3.0.9000
+# mlr3data 0.3.1
 
-- Internal changes only.
+- Removed penguins data set; it is now included in mlr3.
 
 
 # mlr3data 0.3.0
