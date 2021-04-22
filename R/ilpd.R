@@ -10,7 +10,7 @@
 #'
 #' @section Pre-processing:
 #' * All variable have been renamed.
-#' * The target variable has been re-encoded to `"yes" and `"no"`. 
+#' * The target variable has been re-encoded to `"yes"` and `"no"`. 
 #'
 #' @source \url{https://www.openml.org/d/1480}
 #'

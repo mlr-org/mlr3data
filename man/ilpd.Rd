@@ -17,7 +17,7 @@ features. Target column is \code{"diseased"}.
 
 \itemize{
 \item All variable have been renamed.
-\item The target variable has been re-encoded to \verb{"yes" and }"no"`.
+\item The target variable has been re-encoded to \code{"yes"} and \code{"no"}.
 }
 }
 
