@@ -5,11 +5,11 @@
 #'
 #' @description
 #' Classification data to predict whether or not a person is a liver patient.
-#' Obtained using the \CRANpkg{OpenML} package. Contains 538 observations and 10
+#' Obtained using the \CRANpkg{mlr3oml} package. Contains 538 observations and 10
 #' features. Target column is `"diseased"`.
 #'
 #' @section Pre-processing:
-#' * All variable have been renamed.
+#' * All variables have been renamed.
 #' * The target variable has been re-encoded to `"yes"` and `"no"`. 
 #'
 #' @source \url{https://www.openml.org/d/1480}

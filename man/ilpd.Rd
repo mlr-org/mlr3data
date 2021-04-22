@@ -10,13 +10,13 @@
 }
 \description{
 Classification data to predict whether or not a person is a liver patient.
-Obtained using the \CRANpkg{OpenML} package. Contains 538 observations and 10
+Obtained using the \CRANpkg{mlr3oml} package. Contains 538 observations and 10
 features. Target column is \code{"diseased"}.
 }
 \section{Pre-processing}{
 
 \itemize{
-\item All variable have been renamed.
+\item All variables have been renamed.
 \item The target variable has been re-encoded to \code{"yes"} and \code{"no"}.
 }
 }
