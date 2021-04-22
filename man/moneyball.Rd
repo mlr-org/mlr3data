@@ -10,7 +10,7 @@
 }
 \description{
 Regression data to predict the number of runs scored.
-Obtained using the \CRANpkg{OpenML} package.
+Obtained using the \CRANpkg{mlr3oml} package.
 
 Contains 14 features and 1232 observations.
 Target column is \code{"rs"}.

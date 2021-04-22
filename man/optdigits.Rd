@@ -10,7 +10,7 @@
 }
 \description{
 Classification data to predict handwritten digits.
-Obtained using the \CRANpkg{OpenML} package.
+Obtained using the \CRANpkg{mlr3oml} package.
 
 Binarized version of the original data set. The multi-class target column has been converted to
 a two-class nominal target column by re-labeling the majority class as positive (\code{"P"}) and all
