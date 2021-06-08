@@ -13,7 +13,7 @@ All data sets are properly preprocessed and ready to be analyzed by most machine
 Currently contains the following data sets:
 
 1. Housing prices in Kings County [[link](https://mlr3data.mlr-org.com/reference/kc_housing.html)]
-2. Titanic passenger survival data [link](https://mlr3data.mlr-org.com/reference/titanic.html)
+2. Titanic passenger survival data [[link](https://mlr3data.mlr-org.com/reference/titanic.html)]
 3. Optical recognition of handwritten digits data [[link](https://mlr3data.mlr-org.com/reference/optdigits.html)]
 4. Major League Baseball statistics 1962-2012 [[link](https://mlr3data.mlr-org.com/reference/moneyball.html)]
 4. Indian Liver Patient Data [[link](https://mlr3data.mlr-org.com/reference/ilpd.html)]
