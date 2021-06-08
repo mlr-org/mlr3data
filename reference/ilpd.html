@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>House Sales in King County — kc_housing • mlr3data</title>
+<title>Indian Liver Patient Dataset — ilpd • mlr3data</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -53,11 +53,10 @@
 
 
 
-<meta property="og:title" content="House Sales in King County — kc_housing" />
-<meta property="og:description" content="Regression task to predict house sale prices for
-King County, including Seattle, between May 2014 and May 2015.
-Contains 19 features and 21613 observations.
-Target column is &quot;price&quot;." />
+<meta property="og:title" content="Indian Liver Patient Dataset — ilpd" />
+<meta property="og:description" content="Classification data to predict whether or not a person is a liver patient.
+Obtained using the mlr3oml package. Contains 538 observations and 10
+features. Target column is &quot;diseased&quot;." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -156,61 +155,47 @@ Target column is &quot;price&quot;." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>House Sales in King County</h1>
-    <small class="dont-index">Source: <a href='https://github.com/mlr-org/mlr3data/blob/master/R/kc_housing.R'><code>R/kc_housing.R</code></a></small>
-    <div class="hidden name"><code>kc_housing.Rd</code></div>
+    <h1>Indian Liver Patient Dataset</h1>
+    <small class="dont-index">Source: <a href='https://github.com/mlr-org/mlr3data/blob/master/R/ilpd.R'><code>R/ilpd.R</code></a></small>
+    <div class="hidden name"><code>ilpd.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Regression task to predict house sale prices for
-King County, including Seattle, between May 2014 and May 2015.</p>
-<p>Contains 19 features and 21613 observations.
-Target column is <code>"price"</code>.</p>
+    <p>Classification data to predict whether or not a person is a liver patient.
+Obtained using the <a href='https://CRAN.R-project.org/package=mlr3oml'><span class="pkg">mlr3oml</span></a> package. Contains 538 observations and 10
+features. Target column is <code>"diseased"</code>.</p>
     </div>
 
 
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p><a href='https://www.kaggle.com/harlfoxem/housesalesprediction'>https://www.kaggle.com/harlfoxem/housesalesprediction</a></p>
+    <p><a href='https://www.openml.org/d/1480'>https://www.openml.org/d/1480</a></p>
     <h2 class="hasAnchor" id="pre-processing"><a class="anchor" href="#pre-processing"></a>Pre-processing</h2>
 
     
 
 <ul>
-<li><p>Id column has been removed.</p></li>
-<li><p>Dates in column <code>"date"</code> have been converted from strings to <a href='https://rdrr.io/r/base/DateTimeClasses.html'>POSIXct</a>.</p></li>
-<li><p>Values <code>0</code> in feature <code>"yr_renovated"</code> have been replaced with <code>NA</code>.</p></li>
-<li><p>Values <code>0</code> in feature <code>"sqft_basement"</code> have been replaced with <code>NA</code>.</p></li>
-<li><p>Feature <code>"waterfront"</code> has been converted to logical.</p></li>
+<li><p>All variables have been renamed.</p></li>
+<li><p>The target variable has been re-encoded to <code>"yes"</code> and <code>"no"</code>.</p></li>
 </ul>
 
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='st'>"kc_housing"</span>, package <span class='op'>=</span> <span class='st'>"mlr3data"</span><span class='op'>)</span>
-<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span><span class='op'>(</span><span class='va'>kc_housing</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; 'data.frame':	21613 obs. of  20 variables:
-#&gt;  $ date         : POSIXct, format: "2014-10-13" "2014-12-09" ...
-#&gt;  $ price        : num  221900 538000 180000 604000 510000 ...
-#&gt;  $ bedrooms     : int  3 3 2 4 3 4 3 3 3 3 ...
-#&gt;  $ bathrooms    : num  1 2.25 1 3 2 4.5 2.25 1.5 1 2.5 ...
-#&gt;  $ sqft_living  : int  1180 2570 770 1960 1680 5420 1715 1060 1780 1890 ...
-#&gt;  $ sqft_lot     : int  5650 7242 10000 5000 8080 101930 6819 9711 7470 6560 ...
-#&gt;  $ floors       : num  1 2 1 1 1 1 2 1 1 2 ...
-#&gt;  $ waterfront   : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
-#&gt;  $ view         : int  0 0 0 0 0 0 0 0 0 0 ...
-#&gt;  $ condition    : int  3 3 3 5 3 3 3 3 3 3 ...
-#&gt;  $ grade        : int  7 7 6 7 8 11 7 7 7 7 ...
-#&gt;  $ sqft_above   : int  1180 2170 770 1050 1680 3890 1715 1060 1050 1890 ...
-#&gt;  $ sqft_basement: int  NA 400 NA 910 NA 1530 NA NA 730 NA ...
-#&gt;  $ yr_built     : int  1955 1951 1933 1965 1987 2001 1995 1963 1960 2003 ...
-#&gt;  $ yr_renovated : int  NA 1991 NA NA NA NA NA NA NA NA ...
-#&gt;  $ zipcode      : int  98178 98125 98028 98136 98074 98053 98003 98198 98146 98038 ...
-#&gt;  $ lat          : num  47.5 47.7 47.7 47.5 47.6 ...
-#&gt;  $ long         : num  -122 -122 -122 -122 -122 ...
-#&gt;  $ sqft_living15: int  1340 1690 2720 1360 1800 4760 2238 1650 1780 2390 ...
-#&gt;  $ sqft_lot15   : int  5650 7639 8062 5000 7503 101930 6819 9711 8113 7570 ...
-#&gt;  - attr(*, "index")= int(0) </div></pre>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='st'>"ilpd"</span>, package <span class='op'>=</span> <span class='st'>"mlr3data"</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span><span class='op'>(</span><span class='va'>ilpd</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; 'data.frame':	583 obs. of  11 variables:
+#&gt;  $ age                   : int  65 62 62 58 72 46 26 29 17 55 ...
+#&gt;  $ gender                : Factor w/ 2 levels "Female","Male": 1 2 2 2 2 2 1 1 2 2 ...
+#&gt;  $ total_bilirubin       : num  0.7 10.9 7.3 1 3.9 1.8 0.9 0.9 0.9 0.7 ...
+#&gt;  $ direct_bilirubin      : num  0.1 5.5 4.1 0.4 2 0.7 0.2 0.3 0.3 0.2 ...
+#&gt;  $ alkaline_phosphatase  : int  187 699 490 182 195 208 154 202 202 290 ...
+#&gt;  $ alanine_transaminase  : int  16 64 60 14 27 19 16 14 22 53 ...
+#&gt;  $ aspartate_transaminase: int  18 100 68 20 59 14 12 11 19 58 ...
+#&gt;  $ total_protein         : num  6.8 7.5 7 6.8 7.3 7.6 7 6.7 7.4 6.8 ...
+#&gt;  $ albumin               : num  3.3 3.2 3.3 3.4 2.4 4.4 3.5 3.6 4.1 3.4 ...
+#&gt;  $ albumin_globulin_ratio: num  0.9 0.74 0.89 1 0.4 1.3 1 1.1 1.2 1 ...
+#&gt;  $ diseased              : Factor w/ 2 levels "yes","no": 1 1 1 1 1 1 1 1 2 1 ...</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
