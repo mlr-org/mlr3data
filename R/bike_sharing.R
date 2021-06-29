@@ -22,7 +22,7 @@
 #' str(bike_sharing)
 NULL
 
-get_titanic_task = function() {
+get_bike_sharing_task = function() {
   b = as_backend("bike_sharing")
   task = mlr3::TaskRegr$new("bike_sharing", b, target = "count")
   b$hash = task$man = "mlr3data::mlr_tasks_bike_sharing"
