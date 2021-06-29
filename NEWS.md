@@ -1,3 +1,6 @@
+# mlr3data 0.4.0
+* Removed the `palmerpenguins` data set. This is now shipped with `mlr3`.
+
 # mlr3data 0.3.0
 * Added optdigits data obtained via the `OpenML` package.
 * Added moneyball data obtained via the `OpenML` package.
