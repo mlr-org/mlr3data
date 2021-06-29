@@ -1,5 +1,6 @@
-# mlr3data 0.4.1
+# mlr3data 0.5.0
 
+* Added bike sharing regression task from UCI.
 * mlr3 tasks are now loaded lazily.
 
 
