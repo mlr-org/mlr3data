@@ -8,6 +8,7 @@ register_tasks = function() {
   x$add("optdigits", get_optdigits_task)
   x$add("moneyball", get_moneyball_task)
   x$add("ilpd", get_ilpd_task)
+  x$add("bike_sharing", get_bike_sharing_task)
 }
 
 .onLoad = function(libname, pkgname) { # nolint
