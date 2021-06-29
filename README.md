@@ -17,3 +17,4 @@ Currently contains the following data sets:
 3. Optical recognition of handwritten digits data [[link](https://mlr3data.mlr-org.com/reference/optdigits.html)]
 4. Major League Baseball statistics 1962-2012 [[link](https://mlr3data.mlr-org.com/reference/moneyball.html)]
 4. Indian Liver Patient Data [[link](https://mlr3data.mlr-org.com/reference/ilpd.html)]
+5. Bike Sharing Demand [[link](https://mlr3data.mlr-org.com/reference/bike_sharing.html)]
