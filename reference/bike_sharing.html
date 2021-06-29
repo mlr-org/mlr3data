@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>mlr3data: Collection of Machine Learning Data Sets for 'mlr3' — mlr3data-package • mlr3data</title>
+<title>Bike Sharing Demand — bike_sharing • mlr3data</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -53,14 +53,9 @@
 
 
 
-<meta property="og:title" content="mlr3data: Collection of Machine Learning Data Sets for 'mlr3' — mlr3data-package" />
-<meta property="og:description" content="A small collection of interesting and educational machine
-    learning data sets which are used as examples in the 'mlr3' book
-    (&amp;lt;https://mlr3book.mlr-org.com&amp;gt;), the use case gallery
-    (&amp;lt;https://mlr3gallery.mlr-org.com&amp;gt;), or in other examples. All data
-    sets are properly preprocessed and ready to be analyzed by most
-    machine learning algorithms.  Data sets are automatically added to the
-    dictionary of tasks if 'mlr3' is loaded." />
+<meta property="og:title" content="Bike Sharing Demand — bike_sharing" />
+<meta property="og:description" content="Regression data to predict the total count of bikes rented. Contains
+13 features and 17379 observations. Target column is &quot;count&quot;." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -159,40 +154,52 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>mlr3data: Collection of Machine Learning Data Sets for 'mlr3'</h1>
-    <small class="dont-index">Source: <a href='https://github.com/mlr-org/mlr3data/blob/master/R/zzz.R'><code>R/zzz.R</code></a></small>
-    <div class="hidden name"><code>mlr3data-package.Rd</code></div>
+    <h1>Bike Sharing Demand</h1>
+    <small class="dont-index">Source: <a href='https://github.com/mlr-org/mlr3data/blob/master/R/bike_sharing.R'><code>R/bike_sharing.R</code></a></small>
+    <div class="hidden name"><code>bike_sharing.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>A small collection of interesting and educational machine
-    learning data sets which are used as examples in the 'mlr3' book
-    (&lt;https://mlr3book.mlr-org.com&gt;), the use case gallery
-    (&lt;https://mlr3gallery.mlr-org.com&gt;), or in other examples. All data
-    sets are properly preprocessed and ready to be analyzed by most
-    machine learning algorithms.  Data sets are automatically added to the
-    dictionary of tasks if 'mlr3' is loaded.</p>
+    <p>Regression data to predict the total count of bikes rented. Contains
+13 features and 17379 observations. Target column is <code>"count"</code>.</p>
     </div>
 
 
 
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <div class='dont-index'><p>Useful links:</p><ul>
-<li><p><a href='https://github.com/mlr-org/mlr3data'>https://github.com/mlr-org/mlr3data</a></p></li>
-<li><p>Report bugs at <a href='https://github.com/mlr-org/mlr3data/issues'>https://github.com/mlr-org/mlr3data/issues</a></p></li>
+    <p><a href='https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset'>https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset</a></p>
+    <h2 class="hasAnchor" id="pre-processing"><a class="anchor" href="#pre-processing"></a>Pre-processing</h2>
+
+    
+
+<ul>
+<li><p>All columns have been renamed.</p></li>
+<li><p><code>instant</code>, <code>"registered"</code> and <code>"casual"</code> column have been removed.</p></li>
+<li><p><code>"season"</code> and <code>"weather"</code> have been converted to <code><a href='https://rdrr.io/r/base/factor.html'>factor()</a></code>.</p></li>
+<li><p><code>"holiday"</code> and <code>"working_day"</code> have been converted to <code><a href='https://rdrr.io/r/base/logical.html'>logical()</a></code>.</p></li>
 </ul>
 
-</div>
-    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
 
-    <p><strong>Maintainer</strong>: Michel Lang <a href='mailto:michellang@gmail.com'>michellang@gmail.com</a> (<a href='https://orcid.org/0000-0001-9754-0393'>ORCID</a>)</p>
-<p>Other contributors:</p><ul>
-<li><p>Marc Becker <a href='mailto:marcbecker@posteo.de'>marcbecker@posteo.de</a> (<a href='https://orcid.org/0000-0002-8115-0400'>ORCID</a>) [contributor]</p></li>
-</ul>
-
-
-
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='st'>"bike_sharing"</span>, package <span class='op'>=</span> <span class='st'>"mlr3data"</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span><span class='op'>(</span><span class='va'>bike_sharing</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; Classes ‘data.table’ and 'data.frame':	17379 obs. of  14 variables:
+#&gt;  $ date                : chr  "2011-01-01" "2011-01-01" "2011-01-01" "2011-01-01" ...
+#&gt;  $ season              : Factor w/ 4 levels "winter","spring",..: 1 1 1 1 1 1 1 1 1 1 ...
+#&gt;  $ year                : int  0 0 0 0 0 0 0 0 0 0 ...
+#&gt;  $ month               : int  1 1 1 1 1 1 1 1 1 1 ...
+#&gt;  $ hour                : int  0 1 2 3 4 5 6 7 8 9 ...
+#&gt;  $ holiday             : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
+#&gt;  $ weekday             : int  6 6 6 6 6 6 6 6 6 6 ...
+#&gt;  $ working_day         : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
+#&gt;  $ weather             : Factor w/ 4 levels "1","2","3","4": 1 1 1 1 1 2 1 1 1 1 ...
+#&gt;  $ temperature         : num  0.24 0.22 0.22 0.24 0.24 0.24 0.22 0.2 0.24 0.32 ...
+#&gt;  $ apparent_temperature: num  0.288 0.273 0.273 0.288 0.288 ...
+#&gt;  $ humidity            : num  0.81 0.8 0.8 0.75 0.75 0.75 0.8 0.86 0.75 0.76 ...
+#&gt;  $ windspeed           : num  0 0 0 0 0 0.0896 0 0 0 0 ...
+#&gt;  $ count               : int  16 40 32 13 1 1 2 3 8 14 ...
+#&gt;  - attr(*, ".internal.selfref")=&lt;externalptr&gt; </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
