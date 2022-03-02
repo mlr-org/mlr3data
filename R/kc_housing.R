@@ -28,7 +28,7 @@ NULL
 
 get_kc_housing_task = function() {
   b = as_backend("kc_housing")
-  task = mlr3::TaskRegr$new("kc_housing", b, target = "price")
+  task = mlr3::TaskRegr$new("kc_housing", b, target = "price", label = "King County House Sales")
   b$hash = task$man = "mlr3data::mlr_tasks_kc_housing"
   task
 }

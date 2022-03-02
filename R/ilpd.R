@@ -23,7 +23,7 @@ NULL
 
 get_ilpd_task = function() {
   b = as_backend("ilpd")
-  task = mlr3::TaskClassif$new("ilpd", b, target = "diseased", positive = "yes")
+  task = mlr3::TaskClassif$new("ilpd", b, target = "diseased", positive = "yes", label = "Indian Liver Patient Data")
   b$hash = task$man = "mlr3data::mlr_tasks_ilpd"
   task
 }

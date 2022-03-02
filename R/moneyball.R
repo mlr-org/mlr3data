@@ -25,7 +25,7 @@ NULL
 
 get_moneyball_task = function() {
   b = as_backend("moneyball")
-  task = mlr3::TaskRegr$new("moneyball", b, target = "rs")
+  task = mlr3::TaskRegr$new("moneyball", b, target = "rs", label = "Major League Baseball Statistics")
   b$hash = task$man = "mlr3data::mlr_tasks_moneyball"
   task
 }
