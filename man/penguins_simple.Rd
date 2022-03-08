@@ -17,7 +17,7 @@ A better alternative to the \link[=iris]{iris data set}.
 \itemize{
 \item The unit of measurement have been removed from the column names.
 Lengths are given in millimeters (mm), weight in gram (g).
-\item Observations with missing values has been removed.
+\item Observations with missing values have been removed.
 \item Factor variables are one-hot encoded.
 }
 }

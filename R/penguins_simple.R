@@ -10,7 +10,7 @@
 #' @section Pre-processing:
 #' * The unit of measurement have been removed from the column names.
 #'   Lengths are given in millimeters (mm), weight in gram (g).
-#' * Observations with missing values has been removed.
+#' * Observations with missing values have been removed.
 #' * Factor variables are one-hot encoded.
 #'
 #' @source \CRANpkg{palmerpenguins}
