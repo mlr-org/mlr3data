@@ -1,6 +1,7 @@
 # mlr3data 0.6.0
 
 * Added simplified version of the penguins data set as `penguins_simple`.
+* Added labels to data sets.
 
 # mlr3data 0.5.0
 
