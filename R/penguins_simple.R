@@ -4,7 +4,7 @@
 #' @aliases mlr_tasks_penguins_simple
 #'
 #' @description
-#' Classification data to predict the species of penguins from the \CRANpkg{palmerpenguins} package, see [palmerpenguins::penguins].
+#' Classification data to predict the species of penguins from the \CRANpkg{palmerpenguins} package.
 #' A better alternative to the [iris data set][iris].
 #'
 #' @section Pre-processing:
