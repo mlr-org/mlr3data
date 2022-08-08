@@ -1,8 +1,12 @@
+# mlr3data 0.6.0
+
+* Added simplified version of the penguins data set as `penguins_simple`.
+* Added labels to data sets.
+
 # mlr3data 0.5.0
 
 * Added bike sharing regression task from UCI.
 * mlr3 tasks are now loaded lazily.
-
 
 # mlr3data 0.4.0
 
