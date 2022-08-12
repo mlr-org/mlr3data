@@ -1,3 +1,10 @@
+# mlr3data 0.6.1
+
+* Fixed documentation and CRAN notes.
+
+* Added simplified version of the penguins data set as `penguins_simple`.
+* Added labels to data sets.
+
 # mlr3data 0.6.0
 
 * Added simplified version of the penguins data set as `penguins_simple`.
