@@ -16,6 +16,5 @@
 ^\.pre-commit-config\.yaml$
 ^\.ccache$
 ^\.github$
-^tic\.R$
 ^codecov\.yml$
 ^data-raw$

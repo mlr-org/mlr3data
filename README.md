@@ -1,7 +1,7 @@
 # mlr3data
 
 <!-- badges: start -->
-[![tic](https://github.com/mlr-org/mlr3data/workflows/tic/badge.svg?branch=main)](https://github.com/mlr-org/mlr3data/actions)
+[![r-cmd-check](https://github.com/mlr-org/mlr3data/actions/workflows/r-cmd-check.yml/badge.svg)](https://github.com/mlr-org/mlr3data/actions/workflows/r-cmd-check.yml)
 [![CRAN Status](https://www.r-pkg.org/badges/version/mlr3data)](https://CRAN.R-project.org/package=mlr3data)
 [![StackOverflow](https://img.shields.io/badge/stackoverflow-mlr3-orange.svg)](https://stackoverflow.com/questions/tagged/mlr3)
 [![Mattermost](https://img.shields.io/badge/chat-mattermost-orange.svg)](https://lmmisld-lmu-stats-slds.srv.mwn.de/mlr_invite/)
