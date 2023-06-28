@@ -10,6 +10,6 @@ kc_housing[, date := anytime::anytime(date)]
 kc_housing[yr_renovated == 0, yr_renovated := NA_integer_]
 kc_housing[sqft_basement == 0, sqft_basement := NA_integer_]
 kc_housing[, waterfront := as.logical(waterfront)]
-setDF(kc_housing)
+data.table::setDF(kc_housing)
 
-usethis::use_data(kc_housing, overwrite = TRUE)
+usethis::use_data(kc_housing, overwrite = TRUE, compress = "xz")
