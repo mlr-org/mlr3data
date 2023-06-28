@@ -6,7 +6,7 @@
 \title{Power Consumption of Kitchen Appliances in Ames, Iowa}
 \description{
 Data for power consumption of kitchen appliances in Ames, Iowa.
-Extends the ames data set.
+Extends the \code{ames_housing} data set.
 
 Contains 720 features and 2930 observations.
 }

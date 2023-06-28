@@ -1,7 +1,11 @@
+# mlr3data 0.7.0
+
+* Added dataset `ames_housing`, used in the book about mlr3.
+* Added dataset `energy_usage`, used in the book about mlr3.
+
 # mlr3data 0.6.1
 
 * Fixed documentation and CRAN notes.
-
 * Added simplified version of the penguins data set as `penguins_simple`.
 * Added labels to data sets.
 

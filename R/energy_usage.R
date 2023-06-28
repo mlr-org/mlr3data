@@ -4,7 +4,7 @@
 #'
 #' @description
 #' Data for power consumption of kitchen appliances in Ames, Iowa.
-#' Extends the ames data set.
+#' Extends the `ames_housing` data set.
 #'
 #' Contains 720 features and 2930 observations.
 #'
