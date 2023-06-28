@@ -9,4 +9,4 @@ levels(ilpd$diseased) = c("yes", "no")
 
 data.table::setDF(ilpd)
 
-usethis::use_data(ilpd, overwrite = TRUE)
+usethis::use_data(ilpd, overwrite = TRUE, compress = "xz")

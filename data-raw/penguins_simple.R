@@ -10,4 +10,4 @@ task = graph$train(list(task))$output
 penguins_simple = task$data()
 setDF(penguins_simple)
 
-usethis::use_data(penguins_simple, overwrite = TRUE)
+usethis::use_data(penguins_simple, overwrite = TRUE, compress = "xz")

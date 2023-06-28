@@ -19,4 +19,4 @@ titanic[!nzchar(embarked), embarked := NA_character_]
 titanic[, embarked := as.factor(embarked)]
 setDF(titanic)
 
-usethis::use_data(titanic, overwrite = TRUE)
+usethis::use_data(titanic, overwrite = TRUE, compress = "xz")
