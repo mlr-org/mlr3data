@@ -1,3 +1,6 @@
-url = "https://raw.githubusercontent.com/ja-thomas/extend_ames_housing/main/data/ames_dirty.csv"
-ames_housing = data.table::fread(url, stringsAsFactors = TRUE)
+requireNamespace("rprojroot")
+requireNamespace("data.table")
+root = rprojroot::find_package_root_file()
+
+ames_housing = data.table::fread(file.path(root, "data-raw", "ames_housing.csv.bz2"), stringsAsFactors = TRUE)
 usethis::use_data(ames_housing, overwrite = TRUE, compress = "xz")
