@@ -1,3 +1,7 @@
+# mlr3data 0.8.0
+
+* Move  `ames_housing` to mlr3.
+
 # mlr3data 0.7.0
 
 * Added dataset `ames_housing`, used in the book about mlr3.
