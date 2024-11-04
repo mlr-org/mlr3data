@@ -4,7 +4,6 @@
 register_tasks = function() {
   x = getFromNamespace("mlr_tasks", ns = "mlr3")
 
-  x$add("ames_housing", get_ames_housing_task)
   x$add("bike_sharing", get_bike_sharing_task)
   x$add("ilpd", get_ilpd_task)
   x$add("kc_housing", get_kc_housing_task)
