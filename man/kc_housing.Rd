@@ -6,7 +6,7 @@
 \alias{mlr_tasks_kc_housing}
 \title{House Sales in King County}
 \source{
-\url{https://www.kaggle.com/harlfoxem/housesalesprediction}
+\url{https://www.kaggle.com/datasets/harlfoxem/housesalesprediction}
 }
 \description{
 Regression task to predict house sale prices for
