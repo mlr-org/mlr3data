@@ -17,7 +17,7 @@
 #' * Values `0` in feature `"sqft_basement"` have been replaced with `NA`.
 #' * Feature `"waterfront"` has been converted to logical.
 #'
-#' @source \url{https://www.kaggle.com/harlfoxem/housesalesprediction}
+#' @source \url{https://www.kaggle.com/datasets/harlfoxem/housesalesprediction}
 #'
 #' @docType data
 #' @keywords data

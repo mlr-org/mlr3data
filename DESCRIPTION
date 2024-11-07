@@ -1,15 +1,15 @@
 Package: mlr3data
 Title: Collection of Machine Learning Data Sets for 'mlr3'
-Version: 0.7.0.9000
+Version: 0.8.0.9000
 Authors@R:
     c(person(given = "Michel",
              family = "Lang",
-             role = c("cre", "aut"),
+             role = "ctb",
              email = "michellang@gmail.com",
              comment = c(ORCID = "0000-0001-9754-0393")),
       person(given = "Marc",
              family = "Becker",
-             role = "ctb",
+             role = c("cre", "aut"),
              email = "marcbecker@posteo.de",
              comment = c(ORCID = "0000-0002-8115-0400")))
 Description: A small collection of interesting and educational machine
