@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 # mlr3data (development version)
 
 # mlr3data 0.8.0
 
 * Move  `ames_housing` to mlr3.
 
+=======
+>>>>>>> parent of 9b7e8c2 (refactor: move ames housing to mlr3 (#20))
 # mlr3data 0.7.0
 
 * Added dataset `ames_housing`, used in the book about mlr3.
