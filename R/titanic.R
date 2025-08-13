@@ -28,7 +28,7 @@ NULL
 
 get_titanic_task = function() {
   b = as_backend("titanic")
-  task = mlr3::TaskClassif$new("titanic", b, target = "survived", positive = "yes", label = "Titanic")
-  b$hash = task$man = "mlr3data::mlr_tasks_titanic"
+  task = mlr3::TaskClassif$new("titanic", b, target = "survived", positive = "yes")
+  task$override_info(man = "mlr3data::mlr_tasks_titanic", hash = "mlr3data::mlr_tasks_titanic")
   task
 }

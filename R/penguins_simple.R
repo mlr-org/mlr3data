@@ -29,7 +29,7 @@ NULL
 
 get_penguins_simple_task = function() {
   b = as_backend("penguins_simple")
-  task = mlr3::TaskClassif$new("penguins", b, target = "species", label = "Simplified Palmer Penguins")
-  b$hash = task$man = "mlr3data::mlr_tasks_penguins_simple"
+  task = mlr3::TaskClassif$new("penguins", b, target = "species")
+  task$override_info(man = "mlr3data::mlr_tasks_penguins_simple", hash = "mlr3data::mlr_tasks_penguins_simple")
   task
 }

@@ -28,8 +28,17 @@ stopifnot(nrow(moneyball) == 1232L, ncol(moneyball) == 15L)
 
 
 if (requireNamespace("mlr3")) {
+  old_opts = options(
+    warnPartialMatchArgs = TRUE,
+    warnPartialMatchAttr = TRUE,
+    warnPartialMatchDollar = TRUE,
+    mlr3.on_deprecated = "error"
+  )
+
   stopifnot(inherits(mlr3::tsk("kc_housing"), "TaskRegr"))
   stopifnot(inherits(mlr3::tsk("titanic"), "TaskClassif"))
   stopifnot(inherits(mlr3::tsk("optdigits"), "TaskClassif"))
   stopifnot(inherits(mlr3::tsk("moneyball"), "TaskRegr"))
+
+  options(old_opts)
 }
