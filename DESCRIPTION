@@ -26,6 +26,9 @@ Depends:
     R (>= 3.1.0)
 Suggests:
     mlr3 (>= 0.13.3)
+Remotes:
+    mlr-org/mlr3misc@common_baseclass,
+    mlr-org/mlr3@common_baseclass
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz

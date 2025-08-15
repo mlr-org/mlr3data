@@ -30,8 +30,7 @@ NULL
 
 get_optdigits_task = function() {
   b = as_backend("optdigits")
-  task = mlr3::TaskClassif$new("optdigits", b, target = "binaryclass", positive = "P",
-    label = "Optical Recognition of Handwritten Digits")
-  b$hash = task$man = "mlr3data::mlr_tasks_optdigits"
+  task = mlr3::TaskClassif$new("optdigits", b, target = "binaryclass", positive = "P")
+  task$override_info(man = "mlr3data::mlr_tasks_optdigits", hash = "mlr3data::mlr_tasks_optdigits")
   task
 }

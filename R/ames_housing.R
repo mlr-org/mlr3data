@@ -18,7 +18,7 @@ NULL
 
 get_ames_housing_task = function() {
   b = as_backend("ames_housing")
-  task = mlr3::TaskRegr$new("ames_housing", b, target = "Sale_Price", label = "Ames House Sales")
-  b$hash = task$man = "mlr3data::mlr_tasks_ames_housing"
+  task = mlr3::TaskRegr$new("ames_housing", b, target = "Sale_Price")
+  task$override_info(man = "mlr3data::mlr_tasks_ames_housing", hash = "mlr3data::mlr_tasks_ames_housing")
   task
 }
