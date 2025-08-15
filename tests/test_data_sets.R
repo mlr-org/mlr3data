@@ -32,7 +32,7 @@ if (requireNamespace("mlr3")) {
     warnPartialMatchArgs = TRUE,
     warnPartialMatchAttr = TRUE,
     warnPartialMatchDollar = TRUE,
-    mlr3.on_deprecated = "error"
+    mlr3.on_deprecated_mlr3component = "error"
   )
 
   stopifnot(inherits(mlr3::tsk("kc_housing"), "TaskRegr"))
