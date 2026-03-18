@@ -14,7 +14,8 @@ register_tasks = function() {
   x$add("titanic", get_titanic_task)
 }
 
-.onLoad = function(libname, pkgname) { # nolint
+#nolint next: object_name_linter.
+.onLoad = function(libname, pkgname) {
   # nocov start
   if (isNamespaceLoaded("mlr3")) {
     register_tasks()
@@ -24,7 +25,8 @@ register_tasks = function() {
 } # nocov end
 
 
-.onUnload = function(libpath) { # nolint
+#nolint next: object_name_linter.
+.onUnload = function(libpath) {
   # nocov start
   event = packageEvent("mlr3", "onLoad")
   hooks = getHook(event)

@@ -4,6 +4,8 @@ format_bib = function(...) {
 }
 
 #' @importFrom utils bibentry
+# fmt: skip
+# nolint start
 bibentries = c(
   gorman2014 = bibentry("article",
     doi       = "10.1371/journal.pone.0090081",
@@ -15,7 +17,9 @@ bibentries = c(
     pages     = "e90081",
     author    = "Kristen B. Gorman and Tony D. Williams and William R. Fraser",
     editor    = "Andr\u00e8 Chiaradia",
+    #nolint next: line_length_linter.
     title     = "Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis)",
     journal   = "{PLoS} {ONE}"
   )
 )
+# nolint end

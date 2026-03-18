@@ -26,7 +26,6 @@ stopifnotdataset(moneyball)
 stopifnot(nrow(moneyball) == 1232L, ncol(moneyball) == 15L)
 
 
-
 if (requireNamespace("mlr3")) {
   stopifnot(inherits(mlr3::tsk("kc_housing"), "TaskRegr"))
   stopifnot(inherits(mlr3::tsk("titanic"), "TaskClassif"))
