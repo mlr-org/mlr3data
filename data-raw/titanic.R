@@ -3,6 +3,7 @@ library("data.table")
 data("titanic_train", package = "titanic")
 data("titanic_test", package = "titanic")
 
+#nolint next: object_name_linter.
 convertCamelCase = function(x) {
   tolower(gsub("((?<=[a-z0-9])[A-Z]|(?!^)[A-Z](?=[a-z]))", "_\\1", x, perl = TRUE))
 }
