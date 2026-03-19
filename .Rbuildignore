@@ -10,6 +10,7 @@
 ^\.gitignore$
 ^\.ignore$
 ^\.lintr$
+^\.pre-commit-config\.yaml$
 ^\.Rproj\.user$
 ^\.vscode$
 ^.*\.Rproj$
@@ -19,9 +20,11 @@
 ^attic_local$
 ^CITATION.cff$
 ^CLAUDE.md$
+^codecov\.yml$
 ^cspell.json$
 ^CONTRIBUTING.md$
 ^cran-comments\.md$
+^data-raw$
 ^CRAN-SUBMISSION$
 ^docs$
 ^inst/extdata/.+\.R$
