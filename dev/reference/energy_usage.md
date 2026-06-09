@@ -111,5 +111,5 @@ str(energy_usage)
 #>  $ att98 : num  0.715 0.267 0.464 0.599 0.249 ...
 #>  $ att99 : num  0.715 0.267 0.48 0.599 0.345 ...
 #>   [list output truncated]
-#>  - attr(*, ".internal.selfref")=<externalptr> 
+#>  - attr(*, ".internal.selfref")=<pointer: (nil)> 
 ```
