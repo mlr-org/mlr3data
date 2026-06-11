@@ -21,6 +21,11 @@ Useful links:
 **Maintainer**: Marc Becker <marcbecker@posteo.de>
 ([ORCID](https://orcid.org/0000-0002-8115-0400))
 
+Authors:
+
+- Marc Becker <marcbecker@posteo.de>
+  ([ORCID](https://orcid.org/0000-0002-8115-0400))
+
 Other contributors:
 
 - Michel Lang <michellang@gmail.com>
